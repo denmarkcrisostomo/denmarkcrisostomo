@@ -38,7 +38,7 @@ Most of what I ship is TypeScript end to end: NestJS and PostgreSQL on the serve
         <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis">
       </p>
       <p><b>Live in production</b> · source under NDA<br>
-      <a href="https://denmarkcrisostomo.dev/blog/holy-protocol-case-study">How the architecture works →</a></p>
+      <a href="https://holyprotocol.com">See it live →</a></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://denmarkcrisostomo.dev">UpaJuan</a></h3>
@@ -53,7 +53,7 @@ Most of what I ship is TypeScript end to end: NestJS and PostgreSQL on the serve
         <img src="https://img.shields.io/badge/Turborepo-EF4444?style=flat-square&logo=turborepo&logoColor=white" alt="Turborepo">
       </p>
       <p><b>Built solo</b><br>
-      <a href="https://denmarkcrisostomo.dev/blog/upajuan-case-study">How the payment matching works →</a></p>
+      <a href="https://denmarkcrisostomo.dev/blog/why-i-built-upajuan">Why I built it →</a></p>
     </td>
   </tr>
 </table>
@@ -161,7 +161,7 @@ The short version: I'm strongest where the data model meets the money.
 
 ## A note on the empty repo list
 
-Most of my recent work is client code under NDA, so it isn't here. Instead of pinning toy projects, I write up the interesting problems — architecture, tradeoffs, and the parts that didn't work the first time. The case studies above are the honest version of a code sample. Happy to walk through any of it on a call.
+Most of my recent work is client code under NDA, so it isn't here. Instead of pinning toy projects, I write up the interesting problems — architecture, tradeoffs, and the parts that didn't work the first time. The write-ups on my site are the honest version of a code sample. Happy to walk through any of it on a call.
 
 ---
 
