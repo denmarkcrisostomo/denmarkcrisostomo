@@ -2,7 +2,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f766e,100:0b1120&height=200&section=header&text=Denmark%20Crisostomo&fontSize=46&fontColor=e6fffb&fontAlignY=36&desc=Backend-focused%20full-stack%20developer&descSize=17&descAlignY=58&animation=fadeIn" alt="Denmark Crisostomo — backend-focused full-stack developer" width="100%">
   <br/>
   <a href="https://denmarkcrisostomo.dev">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=0F766E&center=true&vCenter=true&width=620&height=44&lines=NestJS+%C2%B7+PostgreSQL+%C2%B7+Stripe+Connect;Payments%2C+auth%2C+and+tenant+isolation;Multi-tenant+SaaS%2C+in+production" alt="NestJS, PostgreSQL, Stripe Connect — payments, auth, and tenant isolation">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2600&pause=1800&color=0F766E&center=true&vCenter=true&width=620&height=44&lines=NestJS+%C2%B7+PostgreSQL+%C2%B7+Stripe+Connect;Payments%2C+auth%2C+and+tenant+isolation;Isolation+enforced+by+Postgres%2C+not+by+hope" alt="NestJS, PostgreSQL, Stripe Connect — payments, auth, and tenant isolation enforced by Postgres">
   </a>
 </div>
 
@@ -10,7 +10,7 @@
 
 Most of what I ship is TypeScript end to end: NestJS and PostgreSQL on the server, Next.js on the front, Stripe wherever money moves. Based in the Philippines (UTC+8), working remotely.
 
-**Right now** I'm building a multi-tenant booking platform at Vytal Automated — per-tenant Stripe payouts, row-level security, and access codes that unlock real machines in the real world.
+**Right now** I'm building **UpaJuan**, a rental platform for Filipino landlords, designed so that a cross-tenant leak or a half-written payment can't happen by construction. Most recently I shipped a multi-tenant booking platform at Beyond Automated (formerly Vytal Automated) — per-tenant Stripe payouts, row-level security, and access codes that unlock real machines in the real world.
 
 **I'm open to remote roles and freelance work.**
 
@@ -41,22 +41,59 @@ Most of what I ship is TypeScript end to end: NestJS and PostgreSQL on the serve
       <a href="https://holyprotocol.com">See it live →</a></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://denmarkcrisostomo.dev">UpaJuan</a></h3>
-      <a href="https://denmarkcrisostomo.dev">
+      <h3><a href="https://www.upajuan.com">UpaJuan</a></h3>
+      <a href="https://www.upajuan.com">
         <img src="./assets/upajuan.webp" alt="UpaJuan" width="100%">
       </a>
-      <p>Rental management for Filipino landlords, built solo. The hard part: most rent arrives as a GCash or bank P2P transfer, and those don't come with a webhook. Solved with per-tenant QR amounts, EMV QR Ph rewriting, and a fuzzy-match fallback for reconciliation.</p>
+      <p>Rental management for Filipino landlords, built solo. Rent here moves as GCash, Maya or bank transfers straight to the landlord, so UpaJuan never holds the money — it keeps the books. That makes the data the product: every landlord's records have to stay theirs, and every balance has to add up.</p>
+      <p>So the guarantees live in the database. Postgres row-level security isolates each landlord, a unit of work is the only way to touch the DB, and money is a ledger of charges, payments and allocations in integer centavos.</p>
       <p>
+        <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS">
         <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
-        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma">
         <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma">
+        <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis">
         <img src="https://img.shields.io/badge/Turborepo-EF4444?style=flat-square&logo=turborepo&logoColor=white" alt="Turborepo">
       </p>
-      <p><b>Built solo</b><br>
+      <p><b>Built solo</b> · in progress<br>
       <a href="https://denmarkcrisostomo.dev/blog/why-i-built-upajuan">Why I built it →</a></p>
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://beyondautomated.com">Beyond Automated</a></h3>
+      <a href="https://beyondautomated.com">
+        <img src="./assets/beyondautomated.webp" alt="Beyond Automated" width="100%">
+      </a>
+      <p>A multi-tenant CRM and booking platform for service businesses, starting with spray tan vending machines. A customer books and pays online, and checkout issues the PIN that unlocks the machine's door.</p>
+      <p>Payload CMS is the only service that touches the database. NestJS goes through its API, so there is one schema owner and one set of migrations. Tenants are isolated in NestJS, in Payload's access rules, and by Postgres row-level security. Each business is paid out through Stripe Connect, and webhooks are deduplicated by event ID and retried on failure.</p>
+      <p>
+        <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS">
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
+        <img src="https://img.shields.io/badge/Payload_CMS-000000?style=flat-square&logo=payloadcms&logoColor=white" alt="Payload CMS">
+        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+        <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" alt="Stripe">
+        <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO">
+      </p>
+      <p><b>Shipped</b> · client codebase, private<br>
+      <a href="https://beyondautomated.com">Visit Beyond Automated →</a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Clairvoyance</h3>
+      <p><i>Threat Intelligence Web Application</i></p>
+      <p>Surfaces threats and vulnerabilities before they become incidents. I built backend features on the MERN stack — JWT auth, role-based authorization, and integrations with Shodan, VirusTotal, Censys, Fofa, and Urlscan.</p>
+      <p>
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB">
+        <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express">
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js">
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+      </p>
+    </td>
+  </tr>
 </table>
+
+Earlier: **BytesMe**, a URL shortener with admin and user dashboards, and **AIROK**, a Python computer-vision bot that cut a game's resource grind by about 90% — the project that taught me automation is mostly patience.
 
 <details>
 <summary><b>Architecture — how Holy Protocol fits together</b></summary>
@@ -90,21 +127,41 @@ flowchart LR
 
 </details>
 
-### Vytal Automated — multi-tenant SaaS
+<details>
+<summary><b>Architecture — how UpaJuan fits together</b></summary>
+<br/>
 
-Booking and access control for self-service automated machines across multiple locations. Tenant isolation enforced with row-level security, Stripe payments wired to automated access-credential generation, and Next.js dashboards gated through a NestJS auth API. Four apps in a Turborepo.
+The rule for UpaJuan is that the unsafe thing should be impossible, not just avoided. Every request sets the landlord's organization on its transaction, and Postgres row-level security filters every query by it, so a missing `WHERE` clause returns nothing instead of someone else's tenants. The unit of work is the only path to the database, so there's no write that isn't inside a transaction. Emails, SMS reminders and notifications go through a transactional outbox, which means a rolled-back payment can't send a receipt.
 
-`NestJS` · `Next.js` · `Payload CMS` · `PostgreSQL` · `Redis` · `Turborepo` · `Stripe`
+Redis is in there for cache, counters and pub/sub fan-out for live updates, and never as the source of truth. Postgres `LISTEN/NOTIFY` would have kept a connection open and stopped Neon from scaling to zero.
 
-Client codebase — private.
+```mermaid
+flowchart LR
+  L([Landlord]) --> APP[Next.js<br/>dashboard]
+  T([Tenant]) -->|signed link + code| APP
+  APP -->|REST| API[NestJS API]
 
-### Clairvoyance — threat intelligence
+  API --> UOW[Unit of work<br/>SET LOCAL org_id]
+  UOW --> DB[(PostgreSQL<br/>RLS · centavo ledger)]
+  UOW --> OB[(Outbox)]
+  OB --> WK[/Outbox worker/]
+  WK --> MSG[Email · SMS<br/>reminders]
 
-Surfaces threats and vulnerabilities before they become incidents. I built backend features on the MERN stack — JWT auth, role-based authorization, and integrations with Shodan, VirusTotal, Censys, Fofa, and Urlscan.
+  API --> R[(Redis<br/>cache · pub/sub)]
+  R -.->|SSE| APP
 
-`MongoDB` · `Express` · `React` · `Node.js` · `TypeScript`
+  PAY{{HitPay}} -.->|webhooks| API
 
-Earlier: **BytesMe**, a URL shortener with admin and user dashboards, and **AIROK**, a Python computer-vision bot that cut a game's resource grind by about 90% — the project that taught me automation is mostly patience.
+  classDef api fill:#0f766e,stroke:#0b5e59,color:#ffffff
+  classDef store fill:#1e293b,stroke:#334155,color:#ffffff
+  classDef ext fill:#635bff,stroke:#4f46e5,color:#ffffff
+  class API,UOW,WK api
+  class DB,OB,R store
+  class PAY ext
+```
+
+</details>
+
 
 ---
 
@@ -141,7 +198,7 @@ Earlier: **BytesMe**, a URL shortener with admin and user dashboards, and **AIRO
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
-Also comfortable in **Zod**, **Better Auth**, **Payload CMS**, **Upstash**, **Postman**, **PHP**, **Laravel**, **Python**, **Strapi**, and **WordPress**.
+Also comfortable in **Zod**, **Better Auth**, **Payload CMS**, **Upstash**, **Resend**, **Postman**, **PHP**, **Laravel**, **Python**, **Strapi**, and **WordPress**.
 
 The short version: I'm strongest where the data model meets the money.
 
