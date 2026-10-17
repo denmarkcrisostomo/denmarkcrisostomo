@@ -16,7 +16,7 @@ Most of what I ship is TypeScript end to end: NestJS and PostgreSQL on the serve
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-denmarkcrisostomo.dev-0F766E?style=for-the-badge&logo=vercel&logoColor=white)](https://denmarkcrisostomo.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/denmarkcrisostomo)
-[![Email](https://img.shields.io/badge/Email-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:dev@lonewolfyyy.slmail.me)
+[![Email](https://img.shields.io/badge/Email-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:hello@denmarkcrisostomo.dev)
 [![Résumé](https://img.shields.io/badge/R%C3%A9sum%C3%A9-PDF-B30B00?style=for-the-badge&logo=readdotcv&logoColor=white)](./assets/DenmarkCrisostomo_Resume.pdf)
 
 ---
@@ -226,7 +226,7 @@ Most of my recent work is client code under NDA, so it isn't here. Instead of pi
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-denmarkcrisostomo.dev-0F766E?style=for-the-badge&logo=vercel&logoColor=white)](https://denmarkcrisostomo.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/denmarkcrisostomo)
-[![Email](https://img.shields.io/badge/Email-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:dev@lonewolfyyy.slmail.me)
+[![Email](https://img.shields.io/badge/Email-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:hello@denmarkcrisostomo.dev)
 [![Résumé](https://img.shields.io/badge/R%C3%A9sum%C3%A9-PDF-B30B00?style=for-the-badge&logo=readdotcv&logoColor=white)](./assets/DenmarkCrisostomo_Resume.pdf)
 
 Currently available for remote full-time roles and freelance projects.
